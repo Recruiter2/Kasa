@@ -34,6 +34,9 @@ export default function Root() {
               <li>
                 <a href={`/contacts/2`}>Your Friend</a>
               </li>
+              <li>
+                <a href={`pages/Home/`}>Your Friend</a>
+              </li>
             </ul>
           </nav>
         </div>

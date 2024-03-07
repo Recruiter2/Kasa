@@ -1,0 +1,26 @@
+/* Styles for the vacation spots page */
+
+/* Style for the main heading */
+h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Style for the list of spots */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style for each spot in the list */
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Style for the last spot to remove the border-bottom */
+  li:last-child {
+    border-bottom: none;
+  }
+  
