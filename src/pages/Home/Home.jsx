@@ -8,8 +8,10 @@ import Card from '../../components/Card/Card';
 function Home() {
 
 
+  
   return (
     <main>
+          {/* need to add nav inside the banner but the issue is that ig it's better to add it in Banner components this way it's easier  */}
       <Banner src={seasideCliffs} alt="Bord de mer" content="Chez vous, partout et ailleurs" />      {/* Display something */}
       <ul>
         {logements.map((card) => (

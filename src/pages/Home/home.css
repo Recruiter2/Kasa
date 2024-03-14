@@ -1,26 +1,40 @@
-/* Styles for the vacation spots page */
+.allcards {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0;
+  max-width: 1200px;
+  margin-top: 15px;
 
-/* Style for the main heading */
-h1 {
-    color: #333;
-    text-align: center;
-  }
-  
-  /* Style for the list of spots */
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Style for each spot in the list */
   li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    width: 100%;
   }
-  
-  /* Style for the last spot to remove the border-bottom */
-  li:last-child {
-    border-bottom: none;
+}
+
+
+@media(min-width: 768px) {
+  .allcards {
+    gap: 30px;
+    background-color: #F6F6F6;
+    padding: 40px;
+    border-radius: 15px;
+
+    li {
+      width: calc((100% - 30px) / 2);
+      margin: auto;
+    }
   }
-  
+}
+
+@media screen and (min-width: 1200px) {
+  .allcards {
+    margin: 35px auto;
+
+    li {
+      width: 340px;
+      height: 340px;
+      margin: auto auto 15px auto;
+    }
+  }
+
+}
