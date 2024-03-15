@@ -6,7 +6,8 @@ import seasideCliffs from '../../assets/images/seaside-cliffs.png';
 import Card from '../../components/Card/Card';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-
+import TestCard from '../../components/TestCard/TestCard';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
@@ -18,13 +19,24 @@ function Home() {
           <Navbar />
 
       <Banner src={seasideCliffs} alt="Bord de mer" content="Chez vous, partout et ailleurs" />      {/* Display something */}
-      <ul>
+      
+      <ul className='allcards'> 
+      {logements.map((card) => (
+        <li key={card.id}>
+          <Link to={`/fullCard/${card.id}`}>
+            <TestCard src={card.cover} alt={card.cover} content={card.title} />
+          </Link>
+        </li>
+  ))}
+</ul>
+      
+      {/* <ul>
         {logements.map((card) => (
           <li key={card.id}> 
             <Card card={card} /> 
           </li>
         ))}
-      </ul>
+      </ul> */}
       <Footer/>
     </main>
 
