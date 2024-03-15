@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import accomodations from '../../assets/logements.json';
+import logements from '../../assets/logements.json';
 import './card.css';
 import Collapse from '../../components/Collapse/Collapse';
 import Rating from '../Rating/Rating.jsx';
@@ -10,7 +10,7 @@ import Error from '../Error/Error'
 
 function FullCard() {
   const { id } = useParams();
-  const card = accomodations.find((card) => card.id === id);
+  const card = logements.find((card) => card.id === id);
   
   if (!card) {
     return <Error />
