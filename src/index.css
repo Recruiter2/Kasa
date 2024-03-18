@@ -15,6 +15,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -97,7 +103,6 @@ form[action$="destroy"] button {
 }
 
 #root {
-  display: flex;
   height: 100%;
   width: 100%;
 }
