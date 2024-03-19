@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';/*
 import Rental from './pages/Rental/Rental'; */
+import FullCard from './pages/FullCard/FullCard';
 /* import Error from   './pages/Error/Error'
  */
 function App() {
@@ -14,8 +15,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                  <Route path="/about" element={<About />} />
-        {/* <Route path="/rental/:id" element={<Rental />} /> */}
-         <Route path="*" element={<Error />} />
+{/*          <Route path="/FullCard/:id" element={<FullCard />} /> 
+ */}         <Route path="*" element={<Error />} />
 
             </Routes>
             <Footer />
