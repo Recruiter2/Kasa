@@ -6,7 +6,7 @@ import Rating from '../../components/Rating/Rating';
 import HostInfo from '../../components/HostInfo/HostInfo';
 import Tags from '../../components/Tags/Tags';
 import Slideshow from '../../components/Slideshow/Slideshow';
-import Error from   '../Error/Error'
+import Error from   '../ErrorPage/ErrorPage'
 
 function FullCard() {
   const { id } = useParams();
