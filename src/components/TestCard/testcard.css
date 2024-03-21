@@ -5,7 +5,6 @@
     flex-wrap: wrap;
     margin-bottom: 15px;
     align-items: stretch;
-    width: 100%;
   
     img {
       width: 100%;
@@ -37,7 +36,7 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   }
   
-  @media (min-width: 1200px) {
+  @media (min-width: 1200px) { /*ok 1200px beacause width meant for pc */
     .card,
     .card img {
       width: 340px;
