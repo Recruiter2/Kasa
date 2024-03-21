@@ -1,7 +1,8 @@
 .banner {
     position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: center;   
+    align-items: center; 
     margin: auto;
   
     img {
@@ -14,8 +15,6 @@
   
     p {
       position: absolute;
-      top: 7px;
-      left: 35px;
       font-size: 24px;
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
@@ -27,32 +26,16 @@
   @media (min-width: 768px) {
     .banner {
       max-width: 1200px;
-  
+ 
       img {
         max-height: 180px;
       }
   
       p {
         font-size: 38px;
-        top: 40px;
-        left: calc(50% - 270px);
-        width: 600px;
+
       }
     }
   }
   
   
-  @media (min-width: 1200px) {
-    .banner {
-      img {
-        max-height: 223px;
-      }
-  
-      p {
-        font-size: 48px;
-        width: 800px;
-        top: 50px;
-        left: calc(50% - 345px);
-      }
-    }
-  }
