@@ -1,44 +1,45 @@
-/*broken*/
-h1 {
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    color: #FF6060;
-    line-height: 25px;
-    margin: 5px 0;
-}
-
-h2 {
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    margin: 5px 0;
-}
-
-@media (min-width: 768px) {
-    h1 {
-        font-size: 24px;
-        margin: 25px 0 0 0;
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    align-items: stretch;
+  
+    img {
+      width: 100%;
+      height: 255px;
+      object-fit: cover;
+      border-radius: 10px;
     }
-
-    .infos-card {
-        display: flex;
+  
+    .card-content {
+      position: absolute;
+      bottom: 25px;
+      left: 15px;
+      color: #FFF;
+      font-family: 'montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      width: calc(100% - 30px);
     }
-
-    .titles-tags {
-        width: 1075px;
+  }
+  
+  .shadow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  }
+  
+  @media (min-width: 1200px) { /*ok 1200px beacause width meant for pc */
+    .card,
+    .card img {
+      width: 340px;
+      height: 340px;
     }
-
-    .rating-host {
-        display: flex;
-        flex-direction: column;
-        margin: 15px 0;
-    }
-}
-
-@media (min-width: 1200px) {
-    h1 {
-        font-size: 32px;
-        margin-bottom: 10px;
-    }
-}
+  }

@@ -11,15 +11,15 @@ function Collapse({ title, content = '' }) {
 
   return (
 
-      <li>
+    <li>
       <button onClick={toggleCollapse} className="collapse-button">
-      <img src={Arrow} alt="Toggle" style={{ transform: `rotate(${isCollapsed ? 0 : 180}deg)`, transition: 'transform 0.3s ease' }} />{title}
+        <img src={Arrow} alt="Toggle" style={{ transform: `rotate(${isCollapsed ? 0 : 180}deg)`, transition: 'transform 0.3s ease' }} />{title}
       </button>
       {isCollapsed ? null : <div
-      className="content-expanded"
+        className="content-expanded"
       >{content}</div>}
-      </li>
-    
+    </li>
+
   );
 };
 

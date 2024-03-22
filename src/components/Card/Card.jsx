@@ -1,26 +1,15 @@
-//broken
-import './card.css';
 import React from 'react';
+import './card.css';
 
-
-function Card({ card }) {
+function Card({ src, alt, content = "" }) {
   return (
-    <figure className="card">
-      <img src={card.cover} alt={card.title} />
-      <figcaption>{card.title}</figcaption>
-    </figure>
-  );
-}
 
-export default Card
-/* function Card({ card }) {
-  return (
-    <figure className="card shadow full-card">
-      <img src={card.cover} alt={card.title} />
-      <figcaption className="card-content full-content">{content}</figcaption>
+    <figure className='card shadow full-card'>
+      <img src={src} alt={alt} />
+        <figcaption className="card-content full-content">{content}</figcaption>
     </figure>
-  );
-}
 
-export default Card
- */
+  );
+};
+
+export default Card;
