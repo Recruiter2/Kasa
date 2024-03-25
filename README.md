@@ -1,6 +1,6 @@
 # React + Vite (wrong Kasa app)
 
-The text above seems accurate don't pay too much attention this app is Kasa app made with react via Vite
+The text below seems accurate don't pay too much attention this app is Kasa app made with react via Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
