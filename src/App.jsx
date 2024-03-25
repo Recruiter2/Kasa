@@ -6,17 +6,17 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';/*
 import Rental from './pages/Rental/Rental'; */
 import FullCard from './pages/FullCard/FullCard';
- import ErrorPage from './pages/ErrorPage/ErrorPage';
- 
+import ErrorPage from './pages/ErrorPage/ErrorPage';
+
 function App() {
     return (
         <BrowserRouter>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                 <Route path="/about" element={<About />} />
-          <Route path="/FullCard/:id" element={<FullCard />} /> 
-         <Route path="*" element={<ErrorPage />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/FullCard/:id" element={<FullCard />} />
+                <Route path="*" element={<ErrorPage />} />
 
             </Routes>
             <Footer />

@@ -1,20 +1,14 @@
-.error-page {
-    
-}
+
+[id="error-page"]  {
 
 
-.error {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
     h1 {
       font-size: 96px;
       font-weight: 700;
       margin: 75px 0;
     }
   
-    h2 {
+    p {
       font-size: 18px;
       text-align: center;
       margin-bottom: 100px;
