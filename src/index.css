@@ -22,6 +22,8 @@ ul {
 }
 
 main {
+  max-width: 1200px;
+  margin: auto;
   padding: 0 1rem;
 
 }
@@ -259,7 +261,7 @@ i {
   transition-delay: 200ms;
 }
 
-#contact {
+[id$="contact"] {
   max-width: 40rem;
   display: flex;
 }

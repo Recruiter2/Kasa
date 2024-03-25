@@ -13,7 +13,7 @@ const About = () => {
 
       <ul className='about-collapse'>
       {data.map((about) => (
-        <Collapse  title={about.title} content={about.content} />
+        <Collapse key={about.title} title={about.title} content={about.content} />
       ))}
       </ul>
 

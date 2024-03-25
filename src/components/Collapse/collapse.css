@@ -58,6 +58,12 @@
       }
   }
   
+  img {
+    transform: rotate( 0deg);
+    transition: 'transform 0.3s ease';
+    /*transform: rotate( 0deg); rotate from 0 to 180 deg*/
+
+  }
   
   @media (min-width: 768px) {
     .collapse-container  {

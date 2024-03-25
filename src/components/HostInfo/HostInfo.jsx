@@ -6,10 +6,9 @@ function HostInfo({ name, picture }) {
 
   return (
     <figure className='host-figure'>
-      <figure className='host-name'>
-        <figcaption>{firstName}</figcaption>
-        <figcaption>{lastName}</figcaption>
-      </figure>
+      
+        <figcaption className='host-name'>{firstName} <br/> {lastName}</figcaption>
+      
       <img src={picture} alt={name} className='host' />
     </figure>
   );

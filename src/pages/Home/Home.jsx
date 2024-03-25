@@ -27,14 +27,7 @@ function Home() {
   ))}
 </ul>
       
-      {/* <ul>
-        {logements.map((card) => (
-          <li key={card.id}> 
-            <Card card={card} /> 
-          </li>
-        ))}
-      </ul> */}
-
+      
     </main>
 
   );
