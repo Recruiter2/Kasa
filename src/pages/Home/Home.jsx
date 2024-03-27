@@ -21,7 +21,7 @@ function Home() {
       {logements.map((card) => (
         <li key={card.id}>
           <Link to={`/fullCard/${card.id}`}>
-            <Card src={card.cover} alt={card.cover} content={card.title} />
+            <Card src={card.cover} alt={card.title} content={card.title} />
           </Link>
         </li>
   ))}
