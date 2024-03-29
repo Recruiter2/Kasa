@@ -14,8 +14,7 @@ function Home() {
          
 
 
-      <Banner src={seasideCliffs} alt="Bord de mer" content="Chez vous,
-       partout et ailleurs" />      
+      <Banner src={seasideCliffs} alt="Bord de mer" content="Chez vous,partout et ailleurs" />      
       
       <ul className='allcards'> 
       {logements.map((card) => (
