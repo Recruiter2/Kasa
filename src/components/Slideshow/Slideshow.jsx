@@ -22,7 +22,9 @@ const Slideshow = ({ images }) => {
         <div>
           <img src={leftArrow} alt="Left arrow" className='arrow-left' onClick={prevSlide} />
           <img src={rightArrow} alt="Right arrow" className='arrow-right' onClick={nextSlide} />
-        </div>
+{/*           <span class="tablette" >{currentImageIndex + 1}/{images.length}</span>
+ */}        </div>
+        
       )}
     </figure>
   );

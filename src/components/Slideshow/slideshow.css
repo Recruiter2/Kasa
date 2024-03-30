@@ -8,29 +8,33 @@
       height: 255px;
       border-radius: 15px;
     }
-  
-    .arrow-left {
+
+    [class*="arrow-"] {
       width: 20px;
       position: absolute;
       top: 50%;
-      left: 15px;
       transform: translateY(-50%);
       cursor: pointer;
     }
+  
+    .arrow-left {
+      left: 15px;
+    }
     
     .arrow-right {
-      width: 20px;
-      position: absolute;
-      top: 50%;
       right: 15px;
-      transform: translateY(-50%);
-      cursor: pointer;
     }  
   }
   
   .count {
     display: none;
+    z-index: 1;
   }
+
+/*   .tablette {
+    display: none;
+    position: absolute;
+  } */
   
   @media (min-width: 768px) {
     .slideshow {
@@ -48,5 +52,8 @@
       right: calc((97%) / 2);
       font-size: 24px;
       color: #FFF;
+    }
+    .tablette {
+      display: block;
     }
   }
