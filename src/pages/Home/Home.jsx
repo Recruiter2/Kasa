@@ -8,25 +8,25 @@ import { Link } from 'react-router-dom';
 function Home() {
 
 
-  
+
   return (
     <main>
-         
 
 
-      <Banner src={seasideCliffs} alt="Bord de mer" content="Chez vous,partout et ailleurs" />      
-      
-      <ul className='allcards'> 
-      {logements.map((card) => (
-        <li key={card.id}>
-          <Link to={`/fullCard/${card.id}`}>
-            <Card src={card.cover} alt={card.title} content={card.title} />
-          </Link>
-        </li>
-  ))}
-</ul>
-      
-      
+
+      <Banner src={seasideCliffs} alt="Bord de mer" content="Chez vous,partout et ailleurs" />
+
+      <ul className='allcards'>
+        {logements.map((card) => (
+          <li key={card.id}>
+            <Link to={`/fullCard/${card.id}`}>
+              <Card src={card.cover} alt={card.title} content={card.title} />
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+
     </main>
 
   );
