@@ -9,8 +9,8 @@ import Slideshow from '../../components/Slideshow/Slideshow';
 import Error from   '../ErrorPage/ErrorPage'
 
 function FullCard() {
-  const { id } = useParams();
-  const card = accomodations.find((card) => card.id === id);
+  const { id } = useParams(); //ici on utilise useParams pour récupérer l'id depuis l'url hook
+  const card = accomodations.find((card) => card.id === id); //on peut par la suite exploiter l'id pour verifier que l'id existe dans le json logements
   
   if (!card) {
     return <Error />

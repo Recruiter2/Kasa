@@ -4,7 +4,7 @@ import rightArrow from '../../assets/images/arrow_right.png';
 import './slideshow.css';
 
 const Slideshow = ({ images }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0); //on met la variable currentImageIndex a 0 et setCurrentImageIndex sert au mettre à jour cette variable || useState est une fonction qui permet de creer une variable d'etat. variable d'etat car on a besoin de mettre à jour le composant
 
   const nextSlide = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
