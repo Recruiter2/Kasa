@@ -15,8 +15,11 @@ function Collapse({ title, content = '' }) {
       <button onClick={toggleCollapse} className="collapse-button">
         <img src={Arrow} alt="Toggle" style={{ }} />{title}
       </button>
-      {isCollapsed ? null : <div className="content-expanded"  >{content}</div>}
-      {/*condition ? valeur_si_vrai : valeur_si_faux.*/}
+      {isCollapsed && <div className="content-expanded">{content}</div>}
+
+      {/*isCollapsed ? null : <div className="content-expanded"  >{content}</div>*/}
+      {/*condition ? valeur_si_vrai : valeur_si_faux.
+      null est une mauvaise pratique car null est indefinit peut poser problèmes dans certains cas*/}
     </li>
 
   );
