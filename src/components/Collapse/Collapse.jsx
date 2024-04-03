@@ -16,7 +16,7 @@ function Collapse({ title, content = '' }) {
         <img src={Arrow} alt="Toggle" style={{ }} />{title}
       </button>
       {isCollapsed && <div className="content-expanded">{content}</div>}
-    {/* si isCollapsed est true on affiche le contenu sinon on l'affiche cache donc ce qu'il y a après le &&*/ }
+    {/* si isCollapsed est true on affiche le contenu (donc ce qu'il y a après le &&)  sinon on le cache*/ }
       {/*isCollapsed ? null : <div className="content-expanded"  >{content}</div>*/}
       {/*condition ? valeur_si_vrai : valeur_si_faux.
       null est une mauvaise pratique car null est indefinit peut poser problèmes dans certains cas*/}
