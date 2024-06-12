@@ -12,7 +12,7 @@ Currently, two official plugins are available:
 # Launch  front 
 npm start
 
-# Don't use this as this command is used to create the app + few steps missing tho
+# Don't use this as this command, it is used to create the app + few steps missing tho
 npm create vite@latest front-end -- --template react
 
 # Missing step? install vite first
