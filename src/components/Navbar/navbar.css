@@ -1,4 +1,4 @@
-.header {
+.navbar {
     padding: 30px 20px;
     display: flex;
     justify-content: space-between; 
@@ -34,7 +34,7 @@
   }
   
   @media screen and (min-width: 768px) {
-    .header {
+    .navbar {
       max-width: 1200px;
       font-size: 20px;
       margin: auto;
